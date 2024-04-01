@@ -117,3 +117,9 @@ export const deleteImage = async (req, res) => {
     data: { n_id, url },
   });
 };
+
+export const test = async (req, res) =>{
+  res.json({
+    message : "hey I am alive now"
+  })
+}
