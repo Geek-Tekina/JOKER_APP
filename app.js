@@ -21,5 +21,5 @@ app.use
 );
 
 app.use("/api-inspirational-joker.com/", imageRouter);
-dbConnection();
+// dbConnection();
 export default app;
