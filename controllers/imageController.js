@@ -120,6 +120,7 @@ export const deleteImage = async (req, res) => {
 
 export const test = async (req, res) =>{
   res.json({
-    message : "hey I am alive now"
+    message : "hey I am alive now",
+    secondMessage : "hey i have tested the change, and it is live now"
   })
 }
