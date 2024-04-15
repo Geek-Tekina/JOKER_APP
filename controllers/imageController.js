@@ -1,6 +1,6 @@
 import { Image } from "../models/imageSchema.js";
 import cloudinary from "cloudinary";
-
+import data from "../models/images.json"
 // controller for displaying all the images
 export const getAllImages = async (req, res) => {
   let page = Number(req.query.page) || 1;
@@ -124,4 +124,8 @@ export const test = async (req, res) =>{
     secondMessage : "hey i have tested the change, and it is live now",
     thirdMessage :  "hey , this is the final test for this"
   })
+}
+
+export const getImages = async (req, res) =>{
+  console.log(data)
 }
