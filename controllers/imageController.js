@@ -197,10 +197,10 @@ export const getImages = async (req, res) => {
       status: 200,
       message: "Success",
       data: {
+        images: paginatedData,
         totalImages: totalImages,
         currentPage: page,
         totalPages: totalPages,
-        images: paginatedData,
       },
     });
   } catch (error) {
