@@ -131,5 +131,6 @@ export const test = async (req, res) =>{
 }
 
 export const getImages = async (req, res) =>{
-  console.log(data)
+  res.json(data);
+  // console.log(data)
 }
