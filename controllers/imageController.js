@@ -179,13 +179,37 @@ export const test = async (req, res) =>{
   })
 }
 
-export const getImages = async (req, res) =>{
-  res.json({
-    success: true,
-    status: 200,
-    message: "Success",
-    data: {
-      imageData,
-    },
-  })
-}
+
+export const getImages = async (req, res) => {
+  try {
+       
+    const page = parseInt(req.query.page) || 1; 
+    const pageSize = parseInt(req.query.pageSize) || 2; 
+    const totalImages = imageData.length;
+    const totalPages = Math.ceil(totalImages / pageSize);
+    const startIndex = (page - 1) * pageSize;
+    const endIndex = Math.min(startIndex + pageSize, totalImages);
+
+    const paginatedData = imageData.slice(startIndex, endIndex);
+
+    res.json({
+      success: true,
+      status: 200,
+      message: "Success",
+      data: {
+        totalImages: totalImages,
+        currentPage: page,
+        totalPages: totalPages,
+        images: paginatedData,
+      },
+    });
+  } catch (error) {
+    console.error("Error fetching images:", error);
+    res.status(500).json({
+      success: false,
+      status: 500,
+      message: "Internal Server Error",
+    });
+  }
+};
+
