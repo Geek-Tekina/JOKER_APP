@@ -2,7 +2,7 @@ import { Image } from "../models/imageSchema.js";
 import cloudinary from "cloudinary";
 
 //json data for getImages API
-const data = [{
+const imageData = [{
 
 }]
 // controller for displaying all the images
@@ -131,6 +131,12 @@ export const test = async (req, res) =>{
 }
 
 export const getImages = async (req, res) =>{
-  res.json(data);
-  // console.log(data)
+  res.json({
+    success: true,
+    status: 200,
+    message: "Success",
+    data: {
+      imageData,
+    },
+  })
 }
