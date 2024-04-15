@@ -2,9 +2,58 @@ import { Image } from "../models/imageSchema.js";
 import cloudinary from "cloudinary";
 
 //json data for getImages API
-const imageData = [{
-
-}]
+const imageData = [
+  {
+    _id: ObjectId("661d4cb027fc8c33c026d95f"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196207/nlgxwbhiw58tctft7uc1.jpg',
+    n_id: 1
+  },
+  {
+    _id: ObjectId("661d4ce627fc8c33c026d962"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196260/ozpu36qwbk8mk92qidtl.jpg',
+    n_id: 2
+  },
+  {
+    _id: ObjectId("661d4d4f27fc8c33c026d965"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196366/x4mwnoylr6chwqvlndmk.jpg',
+    n_id: 3
+  },
+  {
+    _id: ObjectId("661d4d7927fc8c33c026d968"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196407/cbkg294b92tnesgr81pm.jpg',
+    n_id: 4
+  },
+  {
+    _id: ObjectId("661d4d9827fc8c33c026d96b"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196439/ydpn0qnks3fqvehhyead.jpg',
+    n_id: 5
+  },
+  {
+    _id: ObjectId("661d4dea27fc8c33c026d96e"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196519/odpo2vuqll2qwl09yrsn.jpg',
+    n_id: 6
+  },
+  {
+    _id: ObjectId("661d4e5027fc8c33c026d971"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196623/wyppnrgwnjn4pxtp4beq.jpg',
+    n_id: 7
+  },
+  {
+    _id: ObjectId("661d4e9e27fc8c33c026d974"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196700/o953uvkrrernoxhl6k2x.jpg',
+    n_id: 8
+  },
+  {
+    _id: ObjectId("661d4ed427fc8c33c026d977"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196754/car62rrmofdpeqs2qwum.jpg',
+    n_id: 9
+  },
+  {
+    _id: ObjectId("661d4f64d0b5d80b08de6d73"),
+    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196899/r1sdoyelakvvf3folcuf.jpg',
+    n_id: 10
+  }
+]
 // controller for displaying all the images
 export const getAllImages = async (req, res) => {
   let page = Number(req.query.page) || 1;
