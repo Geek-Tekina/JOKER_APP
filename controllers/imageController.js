@@ -1,6 +1,10 @@
 import { Image } from "../models/imageSchema.js";
 import cloudinary from "cloudinary";
-import data from "../models/images.json"
+
+//json data for getImages API
+const data = [{
+
+}]
 // controller for displaying all the images
 export const getAllImages = async (req, res) => {
   let page = Number(req.query.page) || 1;
