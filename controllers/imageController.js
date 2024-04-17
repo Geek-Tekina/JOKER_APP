@@ -207,7 +207,58 @@ const imageData = [
     _id: "661ff36c10cd033c463d3079",
     url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713369960/jo0jp6niit07aom0xxis.jpg',
     n_id: 40
-  }
+  },
+  
+{
+  _id: "661ff38510cd033c463d307c",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713369985/rm23cpxy7nlivthjvd7t.jpg',
+  n_id: 41
+},
+{
+  _id: "661ff3af10cd033c463d307f",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370027/qejktu4l57rv5euateta.jpg',
+  n_id: 42
+},
+{
+  _id: "661ff3c910cd033c463d3082",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370053/jimbpgf8o56hduqxy6ah.jpg',
+  n_id: 43
+},
+{
+  _id: "661ff3dd10cd033c463d3085",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370073/z11gp13vdjbx3wzet0gx.jpg',
+  n_id: 44
+},
+{
+  _id: "661ff3fc10cd033c463d3088",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370104/fqzcpvfsvttcf01ruxby.jpg',
+  n_id: 45
+},
+{
+  _id: "661ff41710cd033c463d308b",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370131/v8liqcd8arjdqlyyo9zh.jpg',
+  n_id: 46
+},
+{
+  _id: "661ff45f10cd033c463d3091",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370203/wqhfrskgwdkxcsz9osiv.jpg',
+  n_id: 47
+},
+{
+  _id: "661ff48110cd033c463d3094",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370237/k2vff2cilpw1gqynbuwt.jpg',
+  n_id: 48
+},
+{
+  _id: "661ff49510cd033c463d3097",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370257/mwr02g4fqni8xdb2gcqo.jpg',
+  n_id: 49
+},
+{
+  _id: "661ff4ad10cd033c463d309a",
+  url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713370281/yk622hihy2ipxfghu2nz.jpg',
+  n_id: 50
+}
 ]
 // controller for displaying all the images
 export const getAllImages = async (req, res) => {
