@@ -115,11 +115,6 @@ const imageData = [
     n_id: 22
   },
   {
-    _id: "661ff0cf2dbea38f81526ee5",
-    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713369291/zttm6ttlbjsaffrisjby.jpg',
-    n_id: 23
-  },
-  {
     _id: "661ff1082dbea38f81526ee8",
     url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713369348/cysivbnhvvge5d1ouabb.jpg',
     n_id: 24
