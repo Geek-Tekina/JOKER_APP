@@ -53,11 +53,7 @@ const imageData = [
     url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196899/r1sdoyelakvvf3folcuf.jpg',
     n_id: 10
   },
-  {
-    _id: "661d4f64d0b5d80b08de6d73",
-    url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713196899/r1sdoyelakvvf3folcuf.jpg',
-    n_id: 10
-  },
+  
   {
     _id: "661fed992dbea38f81526ec1",
     url: 'https://res.cloudinary.com/dgct4lfji/image/upload/v1713368469/rjipa2y93kq85ffyuut4.jpg',
